@@ -3,32 +3,73 @@
     /* align-items: flex-start; */
     flex-wrap: wrap;
     justify-content: space-around;
-    align-content: stretch;
-    height: 100%;
-    /* background-attachment: fixed; */
+    /* align-content: stretch; */
+    /* height: 100%; */
     background-image: url("https://catherineasquithgallery.com/uploads/posts/2021-02/1614509623_182-p-fon-belaya-kirpichnaya-stena-236.jpg");
     background-attachment: fixed;
+
+ .icon   {
+    height: auto;
+    min-width: 100;
+    max-width: 250;
 }
-/* .icon {
-    width: 100%;
-    max-width: 300px;
-    min-width: 200px;
-    height: 200px;
-    flex-basis: 30%;
-} */
-a {
-    font-size: 90px;
+}
+.https {
+    /* font-size: 4vw; */
+    /* max-width: 4vw;
+    min-width: 1vw; */
+    font-size: clamp(40px,5vw,80px);
     flex-basis: 70%;
     color:black;
     text-underline-offset: none;
+    text-align: center;
 }
 em {
-    font-size: 25px;
-    width: 50%;
+    font-size: clamp(15px,2vw,30px);
     color: white;
     background: black;
     
 }
-h1:hover {
-    color:blue
+
+.katalog {
+    display: inline-flex;
+    width: 100%;
+    text-align: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-self: baseline;
+    background-color: rgb(0, 0, 0);
 }
+.menu{
+    color: white;
+    font-size: clamp(15px,2vw,30px);
+
+}
+
+.button { 
+    background-color:#ffffff;
+    color: #000000;
+    border:none;
+    border-radius:15px;
+    box-shadow: 0px 0px 2px 2px rgb(255, 255, 255);
+}
+.botton:hover {
+    background-color: gray;
+}
+
+.menu:hover {
+    text-decoration-line: underline;
+}
+a {
+    text-decoration: none;
+}
+
+li {
+    font-size: clamp(15px,3vw,25px);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: black;
+    text-underline-position: under;
+}
+
